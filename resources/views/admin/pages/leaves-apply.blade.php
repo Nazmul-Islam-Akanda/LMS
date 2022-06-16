@@ -16,15 +16,21 @@
 
 <form action="{{route('admin.leaves.store')}}" method="post">
  @csrf
-  <div class="col-md-3">
+
+ <div class="col-md-3">
+  <div class="mb-3">
+    <label for="" class="form-label">Employee ID</label>
+    <input name="id" value="{{auth()->user()->id}}" placeholder='Enter your name' type="text" class="form-control" id="" required>
+  </div>
+
   <div class="mb-3">
     <label for="" class="form-label">Employee Name</label>
-    <input name="name" placeholder='Enter your name' type="text" class="form-control" id="" required>
+    <input name="name" value="{{auth()->user()->name}}" placeholder='Enter your name' type="text" class="form-control" id="" required>
   </div>
 
   <div class="mb-3">
     <label for="" class="form-label">Employee Email</label>
-    <input name="email" placeholder='Enter your Email' type="text" class="form-control" id="" required>
+    <input name="email" value="{{auth()->user()->email}}" placeholder='Enter your Email' type="text" class="form-control" id="" required>
   </div>
 
 
@@ -37,7 +43,7 @@
             </select>
     </div>
 
-  <div class="form-group">
+  <!-- <div class="form-group">
             <label for="exampleFormControlSelect1">Day Type</label>
             <select name="day_type" class="form-control" id="exampleFormControlSelect1">
                
@@ -45,7 +51,7 @@
                     <option>Full</option>
                     
             </select>
-    </div>
+    </div> -->
 
 
  
@@ -63,10 +69,10 @@
  
 
   
-  <div class="mb-3">
+  <!-- <div class="mb-3">
     <label for="" class="form-label">Days</label>
     <input name="days" placeholder='Give Total Days of Leave You Need' type="number" class="form-control" id="" required>
-  </div>
+  </div> -->
  
 
   </div>

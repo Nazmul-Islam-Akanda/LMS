@@ -113,16 +113,18 @@
                     <div class="d-flex align-items-center"><span class="nav-link-icon"><span class="fas fa-question-circle"></span></span><span class="nav-link-text ps-1">Leaves</span></div>
                   </a>
                   <ul class="nav collapse" id="faq">
+         
+
                     <li class="nav-item"><a class="nav-link" href="{{route('admin.leaves.apply')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Apply Leave</span></div>
                       </a><!-- more inner pages-->
                     </li>
-                    @if(auth()->user()->role=='admin')
+                   
                     <li class="nav-item"><a class="nav-link" href="{{route('admin.leaves.approve')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Leaves Approval</span></div>
                       </a><!-- more inner pages-->
                     </li>
-                    @endif
+                   
                     <li class="nav-item"><a class="nav-link" href="{{route('admin.leaves.list')}}" data-bs-toggle="" aria-expanded="false">
                         <div class="d-flex align-items-center"><span class="nav-link-text ps-1">Leaves List</span></div>
                       </a><!-- more inner pages-->

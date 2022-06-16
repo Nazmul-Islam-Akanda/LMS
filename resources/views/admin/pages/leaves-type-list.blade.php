@@ -22,7 +22,7 @@
       <th scope="col">#</th>
       <th scope="col">Name</th>
       <th scope="col">Description</th>
-      <th scope="col">Credit Per Month</th>
+      <th scope="col">Days Per year</th>
       <th scope="col">Status</th>
       @if(auth()->user()->role=='admin')
       <th scope="col">action</th>

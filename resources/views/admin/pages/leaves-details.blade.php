@@ -6,10 +6,10 @@
  <div id="divToPrint">
  <h1>Employee Leave Details</h1>
 
+ <p> <b>Employee ID: </b> {{$leave->e_id}} </p>
       <p> <b>Employee Name: </b> {{$leave->name}} </p>
       <p> <b>Employee Email: </b> {{$leave->email}} </p>
       <p> <b>Leave Type: </b> {{$leave->leaveType->name}} </p>
-      <p> <b>Day Type: </b> {{$leave->day}} </p>
       <p> <b>Start Date: </b> {{$leave->start_date}} </p>
       <p> <b>End Date: </b> {{$leave->end_date}} </p> 
       <p> <b>Days: </b> {{$leave->days}}</p>

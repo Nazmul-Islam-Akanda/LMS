@@ -33,7 +33,7 @@
   </div>
 
   <div class="mb-3">
-    <label for="" class="form-label">Leaves Credit Per Month</label>
+    <label for="" class="form-label">Leaves Credit Per Year</label>
     <input name="credit" placeholder='Total credit of leaves' type="text" class="form-control" id="" required>
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>

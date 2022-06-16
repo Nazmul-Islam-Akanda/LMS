@@ -15,10 +15,10 @@ class CreateLeavesTable extends Migration
     {
         Schema::create('leaves', function (Blueprint $table) {
             $table->id();
+            $table->string('e_id');
             $table->string('name');
             $table->string('email');
             $table->string('leave_type_name');
-            $table->string('day');
             $table->string('start_date');
             $table->string('end_date');
             $table->integer('days');

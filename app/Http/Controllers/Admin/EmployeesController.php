@@ -7,6 +7,7 @@ use App\Models\Departments;
 use App\Models\Designations;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use Haruncpi\LaravelIdGenerator\IdGenerator;
 
 class EmployeesController extends Controller
 {
@@ -52,8 +53,11 @@ class EmployeesController extends Controller
             'contact'=>'min:11|max:11'
         ]);
 
+
+
         User::Create([
             //db feild name || form field name
+            'id'=>IdGenerator::generate(['table' => 'users', 'length' => 6, 'prefix' => date('y')]),
             'name'=>$request->name,
             'e_department'=>$request->depatment,
             'e_designation'=>$request->designation,

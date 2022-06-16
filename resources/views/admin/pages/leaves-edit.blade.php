@@ -46,7 +46,7 @@
 
 
 
-  <div class="mb-3">
+  <!-- <div class="mb-3">
 <div class="form-group">
             <label for="exampleFormControlSelect1">Day Type</label>
             <select name="day_type" class="form-control" id="exampleFormControlSelect1">
@@ -54,7 +54,7 @@
             <option {{ ($leave->day) == 'Full' ? 'selected' : '' }}  value="Full">Full</option>
             </select>
     </div>
-</div>
+</div> -->
 
 
   <div class="mb-3">
@@ -69,10 +69,10 @@
   </div>
  
 
-  <div class="mb-3">
+  <!-- <div class="mb-3">
     <label for="" class="form-label">Days</label>
     <input name="days" value="{{$leave->days}}"  type="number" class="form-control" id="">
-  </div>
+  </div> -->
   
 
 

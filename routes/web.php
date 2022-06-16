@@ -90,6 +90,7 @@ Route::group(['prefix'=>'admin','middleware'=>'auth'],function(){
     Route::get('/leaves/approve/give/{leave_id}',[LeavesController::class,'leavesApproveGive'])->name('admin.leaves.aprrove.give');
     Route::put('/leaves/approve/store/{leave_id}',[LeavesController::class,'leavesApproveStore'])->name('admin.leaves.approve.store');
     Route::get('/leaves/report',[LeavesController::class,'leavesReport'])->name('admin.leaves.report');
+    Route::get('/leaves/available/{leave_id}',[LeavesController::class,'employeeleavesAvailabe'])->name('admin.leaves.available');
     Route::get('/leaves/details/{leave_id}',[LeavesController::class,'leavesDetails'])->name('admin.leaves.details');
     Route::get('/leaves/edit/{leave_id}',[LeavesController::class,'leavesEdit'])->name('admin.leaves.edit');
     Route::put('/leaves/update/{leave_id}',[LeavesController::class,'leavesUpdate'])->name('admin.leaves.update');

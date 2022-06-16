@@ -17,6 +17,11 @@
  <div class="col-md-3">
 
  <div class="mb-3">
+  <p><b>Employee ID: </b>{{$leave->e_id}}</p>
+  </div>
+
+
+ <div class="mb-3">
   <p><b>Employee Name: </b>{{$leave->name}}</p>
   </div>
 
@@ -28,9 +33,6 @@
   <p><b>Leave Type: </b>{{$leave->leaveType->name}}</p>   
   </div>
 
-  <div class="mb-3">
-  <p><b>Day Type: </b>{{$leave->day}}</p>
-  </div>
 
   <div class="mb-3">
   <p><b>Start Date: </b>{{$leave->start_date}}</p>

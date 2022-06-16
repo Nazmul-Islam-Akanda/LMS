@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use View;
+use App\Models\Leaves;
 use App\Models\WebInfo;
 use Illuminate\Support\Arr;
 use Illuminate\Support\ServiceProvider;
@@ -29,7 +30,8 @@ class AppServiceProvider extends ServiceProvider
     {
 
 
-        View::share('web_inf',WebInfo::first());
+        $web_inf=WebInfo::first();
+        View::share(compact('web_inf'));
         
 
         Builder::macro('whereLike', function ($attributes, string $searchTerm) {

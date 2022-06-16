@@ -46,6 +46,7 @@
     <tr style='background-color:#00ffff'>
       <th scope="col">#</th>
       <th scope="col">Name</th>
+      <th scope="col">ID</th>
       <th scope="col">DOB</th>
       <th scope="col">contact</th>
       <th scope="col">Address</th>
@@ -63,6 +64,7 @@
     <tr>
       <th scope="row">{{$key+1}}</th>
       <td>{{$employee->name}}</td>
+      <td>{{$employee->id}}</td>
       <td>{{$employee->dob}}</td>
       <td>0{{$employee->contact}}</td>
       <td>{{$employee->address}}</td>

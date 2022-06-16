@@ -34,6 +34,9 @@
 
  <p>  <img src="{{url('/uploads/'.$user->image)}}" width='100px'></p>
 
+ <p> <b>Employee ID:</b> {{$user->id}} </p>
+
+
 
   <div class="col-md-3">
   <div class="mb-3">

@@ -35,10 +35,10 @@
   <thead>
   <tr style='background-color:#00ffff'>
       <th scope="col">#</th>
+      <th scope="col">Employee ID</th>
       <th scope="col">Employee Name</th>
       <th scope="col">Employee Email</th>
       <th scope="col">Leave Type</th>
-      <th scope="col">Day Type</th>
       <th scope="col">Start Date</th>
       <th scope="col">End Date</th>
       <th scope="col">Days</th>
@@ -51,10 +51,10 @@
   @foreach ($reports as $key=>$item)
                       <tr>
                         <td>{{$key+1}}</td>
+                        <td>{{$item->e_id}}</td>
                         <td>{{$item->name}}</td>
                         <td>{{$item->email}}</td>
-                        <td>{{$item->leaveType->name}}</td>
-                        <td>{{$item->day}}</td>
+                        <td>{{$item->leaveType->name ?? ""}}</td>
                         <td>{{$item->start_date}}</td>
                         <td>{{$item->end_date}}</td>
                         <td>{{$item->days}}</td>

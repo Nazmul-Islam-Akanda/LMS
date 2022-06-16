@@ -16,6 +16,7 @@ class UsersTableSeeder extends Seeder
     {
         User::Create([
             //db feild name || form field name
+            'id'=>'1',
             'name'=>'admin',
             'e_department'=>'Admin',
             'e_designation'=>'Admin',
